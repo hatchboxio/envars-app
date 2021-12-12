@@ -1,0 +1,11 @@
+<main class="container mx-auto my-12">
+  <h1 class="text-4xl font-bold">List of Environment Variables</h1>
+  <table class="table-fixed mt-4">
+    <% @env_vars.each do |key, value| %>
+      <tr class="border-b">
+        <td><%= key %></td>
+        <td class="break-all"><%= value %></td>
+      </tr>
+    <% end %>
+  </table>
+</main>
